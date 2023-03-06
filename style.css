@@ -1,0 +1,189 @@
+/* HTML */
+html {
+    /* Menambahkan properti scroll-behavior agar halaman dapat bergerak secara halus saat scroll */
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    /* Menambahkan font-family, margin, padding, dan width untuk body */
+    font-family: 'IBM Plex Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    /* Menambahkan properti overflow-x agar tidak ada scroll horizontal pada body */
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    /* Menambahkan display flex, height, position, width dan z-index pada header*/
+    display: flex;
+    height: 5em;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+header h1 {
+    /* Menambahkan font-size, text-align, float, margin dan color pada header h1*/
+    font-size: 4rem;
+    text-align: 5em;
+    float: left;
+    margin: 0.3em 0 0 .9em;
+    color: white;
+}
+
+header a {
+    /* Menghilangkan text-decoration dan mengubah color pada header a*/
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    /* Menguba warna a apabila kursor berada diatas tag a */
+    color: #6c6c6c;
+}
+
+header ul {
+    /* Menambahkan display flex, position, margin-top dan margin-right pada header ul*/
+    display: flex;
+    position: absolute;
+    margin-top: 2em;
+    margin-right: 4em;
+    font-size: 1.5rem;
+    right: .1em;
+}
+
+header ul li {
+    /* Menambahkan margin-left dan list-style-type pada header ul li*/
+    margin-left: 2em;
+    list-style-type: none;
+}
+
+/* Dropdown pada tag a 'product'*/
+
+.dropbtn {
+    /* Menambahkan cursor, border, background color dan font size untuk dropbtn*/
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.dropbtn:hover {
+    /* Menambahkan color untuk dropbtn ketika di hover*/
+    color: #6c6c6c;
+}
+
+.dropdown {
+    /* Menambahkan position relative dan display inline block untuk dropdown*/
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    /* Menampilkan dropdown content dengan menyembunyikan display none 
+    serta mengatur posisi absolute dengan border radius 10px serta mengatur width 11em agar content tidak terlalu luas*/
+    display: none;
+    position: absolute;
+    font-size: 1rem;
+    background-color: #6c6c6cbe;
+    border: 0 solid #6c6c6cbe;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 11em;
+    overflow: hidden;
+}
+
+.dropdown-content a {
+    /* Mengatur padding 6px 15px serta background color #6c6c6cbe ketika hover di dropdown content a*/
+    display: block;
+    padding: 6px 15px;
+}
+
+.dropdown-content a:hover {
+    /* Mengubah warna background apabila mouse hover pada tag a */
+    background-color: rgba(255, 255, 255, 0.422);
+}
+
+.dropdown:hover .dropdown-content {
+    /* Menampilkan .dropdown-content apabila hover pada bagian .dropdown */
+    display: block;
+}
+
+main {
+    /* Mengatur posisi absolute untuk main*/
+    position: absolute;
+}
+
+/* Section A */
+section#a {
+    /* Mengatur width 100vw serta margin top dan mengubah warna tulisan dan background untuk section a*/
+    width: 100vw;
+    margin-top: -6.5em;
+    color: white;
+    height: 100vh;
+    /* Membuat background menjadi gradient dengan background image */
+    background-image: linear-gradient(to bottom left, #73D7F1 40%, #9a74f0);
+}
+
+section#a h1 {
+    /* Mengatur ukuran dan letak posisi h1 pada section a */
+    font-size: 3rem;
+    margin-left: calc(50vw - 9em);
+    position: relative;
+    top: 7em;
+    margin-top: 0.5em;
+    line-height: 1.4em;
+    font-weight: lighter;
+    width: 20em;
+}
+
+section#a .home {
+    /* Mengatur ukuran dan letak posisi a .home pada section a */
+    font-size: 2rem;
+    width: 4em;
+    height: 1em;
+    padding: .2em;
+    border: 1px solid rgb(34, 34, 174);
+    border-radius: 1em;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
+    display: flex;
+    position: relative;
+    top: 11em;
+    margin-left: calc(50% - 1em);
+    text-decoration: none;
+    color: white;
+}
+
+section#a a:hover {
+    /* Mengubah warna border dan warna tulisan apabila hover pada a di section a tag a */
+    border-color: white;
+    color: #33333382;
+}
+
+section#a h4 {
+    /* Mengatur posisi h4 pada class home */
+    text-align: center;
+    margin-top: -.3em;
+    margin-left: .2em;
+}
+
+section#a .icon {
+    /* Mengatur posisi icon pada icon panah di sebelah tulisan home */
+    margin-left: .4em;
+    margin-top: -.1em;
+    align-items: center;
+    background-image: url(img/arrow.png);
+    width: 30px;
+    height: 30px;
+    rotate: 90deg;
+}
