@@ -1,6 +1,6 @@
-## CompanyProfile
+# CompanyProfile
 Tugas 1 Pemrograman Web F081 Kelompok 9
-# Nama Anggota :
+### Nama Anggota :
 - Hilda Sakinatul Fikriya (21081010044)
 - Marchel Adias Pradana   (21081010084)
 - Muhammad Bagus Satrio   (21081010102)
